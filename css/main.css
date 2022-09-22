@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.red { color:rgb(255, 0, 0)}
+.green {color: rgb(0, 255, 0)}
+.blue {color: rgb(0, 0, 255)}
+
+
+.line-through {
+    text-decoration:line-through;
+    color: grey;
+}
+
+body {
+    background-color: black;
+}
+
+.playing-area {
+    padding-top: 15px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+.heading {
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+p {
+    font-size: 24px;
+    color: white;
+}
+
+.selected-card {
+    margin: 18px;
+    height: 76px;
+    width: 76px;
+    background-image: url('../img/empty.png');
+    background-size: cover;
+}
+
+.empty-btn {
+    border: solid 3px grey;
+}
+
+.fire-btn, .water-btn, .leaf-btn, .empty-btn, .confirm-btn {
+    padding: 12px 12px 6px 12px;
+    border-radius: 15px;
+    margin: 25px 20px;
+    font-size: 50px;
+    transition: transform 50ms ease-in-out;
+}
+
+.fire-btn:hover:not(.selected-btn),
+.water-btn:hover:not(.selected-btn),
+.leaf-btn:hover:not(.selected-btn),
+.empty-btn:hover,
+.confirm-btn:hover {
+    transform: scale(1.1);
+}
+
+.fire-btn {
+    border: solid 3px rgb(200, 100, 0);
+}
+
+.water-btn {
+    border: solid 3px rgb(0, 100, 200);
+}
+
+.leaf-btn {
+    border: solid 3px rgb(0, 200, 100);
+}
+
+.selected-btn {
+    transform: scale(1.2);
+    border: dotted 3px black;
+}
+
+.hp-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.empty-btn {
+    margin-top: 80px;
+}
+
+.your-hp, .opponent-hp {
+    font-weight: 900;
+}

@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Rock Paper Scissors</title>
-    <script src="./js/main.js"></script>
+    <title>Elemental Card</title>
+        <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <p>the army of wizard launches 3 elemental missile to your village.
-        master! choose your magic shield to defend the magic missile.
-    </p>
+    <div class="heading">
+        <h1>Elemental Card</h1>
+        <h2>(a <span class="line-through">clone</span> very original game "inspired" by Rock Paper Scissors)</h2>
+    </div>
+
+    <div class="playing-area">
+    <p><span class="red">FIRE</span> beats <span class="green">LEAF</span>, <span class="blue">WATER</span> beats <span class="red">FIRE</span>, <span class="green">LEAF</span> beats <span class="blue">WATER</span>, <span class="line-through" style='color:black'>BUGS beat PROGRAMMER</span></p>
+
+
+    <button class="empty-btn"><div class="selected-card"></div></button>
+    <div class="choices-container">
+        <button class="fire-btn"><img width="100px" height="100px" src="./img/fire.png" alt="an icon of fire"></button>
+        <button class="water-btn"><img width="100px" height="100px" src="./img/water.png" alt="an icon of water"></button>
+        <button class="leaf-btn"><img width="100px" height="100px" src="./img/leaf.png" alt="an icon of leaf"></button>
+    </div>
+    <button class="confirm-btn">Start</button>
+    <p class="description-p">-</p>
+
+        <div class="hp-area">
+            <p class="your-hp">Your HP: 3</p>
+            <p class="opponent-hp">Opponent HP: 3</p>
+        </div>
+
+    </div>
 </body>
 </html>
